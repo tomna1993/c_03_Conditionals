@@ -1,14 +1,10 @@
+#include <cs50.h>
 #include <stdio.h>
 
 int main(void)
 {
-	int x, y;
-
-	printf("Give the first number: ");
-	scanf("%d\n", &x);
-
-	printf("Give the second number: ");
-	scanf("%d\n", &y);
+	int x = get_int("Give the first number: ");
+	int y = get_int("Give the second number: ");
 	
 	if (x < y)
 	{
